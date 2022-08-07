@@ -1,0 +1,49 @@
+{{define "index"}}
+{{template "_header"}}
+{{template "_navbar"}}
+<!-- main content -->
+<main class="content">
+    <div class="container">
+        <h2 class="my-3">List Task</h2>
+        <a class="btn btn-success mb-3" role="button" aria-disabled="true" href="#">Add Task</a>
+        <table class="table table-responsive table-hover">
+            <thead class="table-light">
+            <tr>
+                <th scope="col" width="10%">#</th>
+                <th scope="col" width="25%">Task</th>
+                <th scope="col" width="25%">Assigne</th>
+                <th scope="col" width="25%">Deadline</th>
+                <th scope="col" width="15%">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>
+                    <!-- <a href=""><span class="badge bg-success"><span class="material-icons">check_circle</span></span></a> -->
+                    <a href=""><span class="badge bg-primary"><span class="material-icons">check</span></span></a>
+                    <a href=""><span class="badge bg-secondary"><span class="material-icons">edit</span></span></a>
+                    <!-- <a href=""><span class="badge bg-danger"><span class="material-icons">delete</span></span></a> -->
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>
+                    <!-- <a href=""><span class="badge bg-success"><span class="material-icons">check_circle</span></span></a> -->
+                    <a href=""><span class="badge bg-primary"><span class="material-icons">check</span></span></a>
+                    <a href=""><span class="badge bg-secondary"><span class="material-icons">edit</span></span></a>
+                    <!-- <a href=""><span class="badge bg-danger"><span class="material-icons">delete</span></span></a> -->
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+{{template "_footer"}}
+{{end}}
